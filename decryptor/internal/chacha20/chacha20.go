@@ -120,7 +120,8 @@ func DecryptFileT2(filePath string, privRsaKeyBytes []byte) error {
 		return err
 	}
 
-	// PORCO DIO STICAZZO DI 16 BYTE
+	// After spending 3 hours reading about chacha20 the output from the algoritm adds 16 bytes this caused issues when decrypting the file
+	// WHY IS THIS NOT ONE OF THE FIRST THINGS EXPLAINED!!!
 	plaintext, err := aead.Open(nil, nonce, encryptedData[:1000016], nil)
 	if err != nil {
 		return err
