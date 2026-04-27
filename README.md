@@ -1,6 +1,6 @@
 # NOTE:
 > [!WARNING]
-> Rewrite in progress i found some edge cases where files hash doesn't match with the original ones.
+> Rewrite in progress i found some edge cases where files hash doesn't match with the original ones after decyption.
 
 ## Requiremets:
 
